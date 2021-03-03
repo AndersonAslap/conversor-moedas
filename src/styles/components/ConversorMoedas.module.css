@@ -1,0 +1,43 @@
+body {
+    background-color: #f2f3f5;
+}
+
+.conversorMoedasContainer {
+    width: 60vw;
+    height: 70vh;
+    margin: 5rem auto;
+    border-radius: 5px;
+}
+
+.conversorMoedasContainer header{
+    text-align: center;
+}
+
+.conversorMoedasContainer main {    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-content: center;
+    margin-top: 2rem;
+}
+
+
+.conversorMoedasContainer div{
+    width: 100%;
+    height: 50vh;
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 0 0 1em black;
+}
+
+.conversorMoedasContainer div{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conversorMoedasContainer div input{  
+    margin-top: 10px;
+    width: 70%;
+}
