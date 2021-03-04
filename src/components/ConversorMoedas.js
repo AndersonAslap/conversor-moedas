@@ -1,5 +1,6 @@
-import { Button, Container , Spinner } from 'react-bootstrap';
+import ListarMoedas from './ListarMoedas.js';
 
+import { Button, Container , Spinner } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 
@@ -23,14 +24,16 @@ export function ConversorMoedas() {
                     />
 
                     <select
-                        as="select" 
                         className={styles.conversorMoedasInput} 
-                    />
+                    >
+                        <ListarMoedas />
+                    </select>
 
                     <select
-                        as="select" 
                         className={styles.conversorMoedasInput} 
-                    />
+                    >
+                        <ListarMoedas />
+                    </select>
 
                     <Button 
                         variant="success" 
