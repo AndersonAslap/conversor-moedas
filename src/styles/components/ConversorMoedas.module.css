@@ -7,17 +7,23 @@ body {
     height: 70vh;
     margin: 5rem auto;
     border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .conversorMoedasContainer header{
     text-align: center;
 }
 
-.conversorMoedasContainer main {    
+.conversorMoedasContainer main {
+    width: 70vw;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-content: center;
     margin-top: 2rem;
 }
 
@@ -30,14 +36,27 @@ body {
     box-shadow: 0 0 1em black;
 }
 
-.conversorMoedasContainer div{  
+.conversorMoedasContainer div {  
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.conversorMoedasContainer div input{  
+.conversorMoedasInput {  
     margin-top: 10px;
     width: 70%;
+
+    display:block;
+    height:calc(1.5em + .75rem + 2px);
+    padding:.375rem .75rem;
+    font-size:1rem;
+    font-weight:400;
+    line-height:1.5;
+    color:#495057;
+    background-color:#fff;
+    background-clip:padding-box;
+    border:1px solid #ced4da;
+    border-radius:.25rem;
+    transition:border-color .15s ease-in-out, box-shadow .15s ease-in-out
 }
