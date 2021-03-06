@@ -87,7 +87,7 @@ export function ConversorMoedas() {
             </header>
 
             <main>  
-                <form onSubmit={handleConverter} noValidate validated={isFormValidated}>
+                <form onSubmit={handleConverter}>
                     <div>
                         <input 
                             type="text"
@@ -118,6 +118,7 @@ export function ConversorMoedas() {
                             type="submit"
                             variant="success" 
                             className={styles.conversorMoedasInput}
+                            data-testid="btn-converter"
                         >
                             Converter &nbsp; <FontAwesomeIcon icon={faArrowCircleRight} />
                         </Button>
@@ -132,7 +133,7 @@ export function ConversorMoedas() {
                             <div>
                                 { 
                                     isConvertido ? (
-                                        <div className={!isError ? "bg-success text-white text-center" : "bg-danger text-white text-center"} style={{fontWeight:'bold'}}>
+                                        <div className={!isError ? "bg-success text-white text-center" : "bg-danger text-white text-center"} style={{fontWeight:'bold'}} data-testid="resultado">
                                             {result}
                                         </div>
                                     ) : (
